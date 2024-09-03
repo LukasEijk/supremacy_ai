@@ -82,7 +82,7 @@ class PlayerAi:
                 if base.crystal > base.cost("mine"):
                     base.build_mine()
 
-            elif base.mines>=2 and self.nships[uid]<=10:
+            elif base.mines>=2 and self.nships[uid]<=8:
                 if base.crystal > base.cost("ship"):
                     base.build_ship(heading=360 * np.random.random())
                     self.nships[uid] += 1
